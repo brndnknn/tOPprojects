@@ -14,9 +14,17 @@ function Book(title, author, pageCount, readStatus){
 
 // create book card and add to library shelf div
 function addBookToLibrary() {
+    let newBook = document.createElement('div');
+    newBook.className = "BookCard";
+    newBook.innerText = "newBook";
+    document.getElementById('LibraryShelf').append(newBook);
 
 };
 
 // button click causes popup for book object creation
+
+let bookButton = document.getElementById("bookButton");
+
+bookButton.addEventListener("click", addBookToLibrary)
 
 // 
