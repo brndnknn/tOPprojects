@@ -12,17 +12,33 @@
             <button id="bookButton">New Book</button> 
         </header>
     
-    
+
     <main>  
         
         <div id="LibraryShelf">
             <div class="BookCard">BookCard</div>
         </div>
-    </main>
         <div id="newBookForm">
-            <p>newBookForm</p>
+            <form>
+                
+                <input type="text" placeholder="Author" id="author" required>
+                <br>  
+                 
+                <input type="text" placeholder="Title" id="title" required>
+                <br>  
+                 
+                <input type="text" placeholder="Number of Pages" id="numberPages" required>
+                <br>
+                <label for="read">
+                    <input type="checkbox" name="read" id="read">  &nbsp; Already Read </label>
+                <br>
+                <input type="button" id="addBookButton" value="Add Book">
+            </form>
         </div>
-    
+
+    </main>
+
+
     
     
 </body>
