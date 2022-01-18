@@ -16,21 +16,20 @@
     <main>  
         
         <div id="LibraryShelf">
-            <div class="BookCard">BookCard</div>
         </div>
-        <div id="newBookForm">
-            <form>
+        <div id="newBookForm" style="display: none;">
+            <form id='form'>
                 
-                <input type="text" placeholder="Author" id="author" required>
+                <input type="text" placeholder="Author" class= "formText" id="author" required>
                 <br>  
                  
-                <input type="text" placeholder="Title" id="title" required>
+                <input type="text" placeholder="Title" class= "formText" id="title" required>
                 <br>  
                  
-                <input type="text" placeholder="Number of Pages" id="numberPages" required>
+                <input type="text" placeholder="Number of Pages" class= "formText" id="pageCount" required>
                 <br>
                 <label for="read">
-                    <input type="checkbox" name="read" id="read">  &nbsp; Already Read </label>
+                    <input type="checkbox" name="read" id="readStatus">  &nbsp; Already Read </label>
                 <br>
                 <input type="button" id="addBookButton" value="Add Book">
             </form>
