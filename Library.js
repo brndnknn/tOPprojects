@@ -34,12 +34,46 @@ function createCard() {
     return newCard;
 };
 
-function readChange() {
-    console.log('change');
+function changeEntry() {
+    switch( event.target.classList[0] ) {
+        case 'readStatus':
+            changeStatus(this);
+            break;
+        case 'removeButton':
+            removeEntry(this);
+            break;
+        default:
+            break;
+    }
 }
 
-function readRemove() {
+function removeEntry(entry) {
     console.log('remove');
+    console.log(entry);
+    let bookIndex = entry.getAttribute('data-lib-index');
+    entry.remove();
+    myLibrary.splice(bookIndex, 1);
+    let bookCards = document.querySelectorAll('.BookCard');
+    bookCards.forEach(element => {
+        let libIndex = element.getAttribute('data-lib-index');
+        if(libIndex >= bookIndex)
+        {
+            element.setAttribute('data-lib-index', libIndex-1);
+        }
+    });
+}
+
+function changeStatus(entry) {
+    let bookIndex = entry.getAttribute('data-lib-index');
+    let readStatusButton = entry.querySelector('.readStatus');
+    if(myLibrary[bookIndex].readStatus == true ){
+        myLibrary[bookIndex].readStatus = false;
+        readStatusButton.innerText = 'Not-Read';
+    }else{
+        myLibrary[bookIndex].readStatus = true;
+        readStatusButton.innerText = 'Read';
+    }
+   
 }
 
 function displayCard( Book ) {
@@ -51,11 +85,8 @@ function displayCard( Book ) {
     let readStatus = Book.readStatus ? 'Read' : "Not-Read";
     let readButton = newCard.querySelector('.readStatus');
     readButton.textContent = readStatus;
-    readButton.classList.add(readStatus);
-    readButton.addEventListener('click', readChange);
-    newCard.querySelector('.removeButton').addEventListener('click', readRemove);
-
-
+    newCard.addEventListener('click', changeEntry);
+  
     return newCard;
 }
 
