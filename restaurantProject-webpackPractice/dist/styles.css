@@ -1,17 +1,28 @@
 body {
     box-sizing: border-box;
     margin: 1em;
-    background-color: gray;
+    background-color: black;
+    color: white;
     min-width: 450px;
     font-family: 'Courier New', Courier, monospace;
 
 }
 
-.navBar {
+#header {
+    padding-top: 1em;
+}
+
+.heading {
     width: 70%;
     margin-right: auto;
     margin-left: auto;
     background-color: black;
+    text-align: center;
+    border: #FF00FF solid .2em;
+}
+
+.navBar{
+
     display: flex;
     justify-content: center;
 }
@@ -20,17 +31,16 @@ body {
     padding: .5em;
     margin: 1em;
     width: 20%;
-    text-align: center;
-    border: white solid .2em;
-    color: white;
+    border: #FFFF00 solid .2em;
+
 }
 
-.pageContent {
+#pageContent {
     width: 80%;
     min-height: 80vh;
     margin-left: auto;
     margin-right: auto;
-    border: black solid .2em;
+    border: #00FFFF solid .2em;
     padding: 2em;
 
 
