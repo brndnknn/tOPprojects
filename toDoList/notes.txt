@@ -1,0 +1,25 @@
+// to do list planning //
+
+---------------------------
+items must have:
+
+    _ - description
+    _ - dueDate
+    _ - ability to check when finished
+
+    may have:
+    
+    _ - title
+    _ - priority
+    _ - checklist
+    _ - location
+    _ - set as recurring
+---------------------------
+
+lists must be organizable
+--------------------------
+ALL
+    THIS WEEK
+    priority
+    past due
+    completed
