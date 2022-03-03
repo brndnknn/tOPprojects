@@ -18,8 +18,11 @@ items must have:
 
 lists must be organizable
 --------------------------
-ALL
+ALL Tasks
+    To day - default location on load
     THIS WEEK
     priority
     past due
     completed
+custom projects
+
