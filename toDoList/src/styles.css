@@ -7,8 +7,32 @@
 body {
     padding: 1em;
     background-color: grey;
+   
+}
+#container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
 }
 
-div {
+#header {
     background-color: lightblue;
+    text-align: center;
+    grid-column: 1 / 3;
+    grid-row: 1/2;
+}
+ 
+
+
+#sideBar{
+    background-color: rgb(78, 5, 64);
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+}
+
+#content{
+    background-color: blue;
+    grid-column: 2 / 3;
+    grid-row: 2/3;
 }

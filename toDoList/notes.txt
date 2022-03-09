@@ -6,11 +6,10 @@ items must have:
     _ - description
     _ - dueDate
     _ - ability to check when finished
-
-    may have:
-    
-    _ - title
     _ - priority
+    _ - title
+    
+    may have:
     _ - checklist
     _ - location
     _ - set as recurring
@@ -26,3 +25,19 @@ ALL Tasks
     completed
 custom projects
 
+to do for the toDoList
+------------------------
+
+-x- set up webpack
+
+- - create to do object
+
+- - create display for to do object
+
+- - create to do adder display
+
+- - create layout for page
+
+- - create list folder logic
+
+- - create list folder display and fill with defaults

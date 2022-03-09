@@ -5,11 +5,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
      mode: "development",
      entry: {
          index: './src/index.js',
-         print: './src/print.js',
+         task: './src/task.js',
      },
      plugins: [
          new HtmlWebpackPlugin({
-             title: 'Output Management',
+             template: "./src/index.html"
          }),
      ],
      output: {
