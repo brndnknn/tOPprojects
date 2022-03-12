@@ -6,10 +6,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
      entry: {
          index: './src/index.js',
          task: './src/task.js',
+         list: './src/list.js',
      },
      plugins: [
          new HtmlWebpackPlugin({
-             template: "./src/index.html"
+             template: "./src/index.html",
+             inject: 'body'
          }),
      ],
      output: {

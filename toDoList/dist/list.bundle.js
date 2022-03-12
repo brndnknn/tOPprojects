@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/task.js":
+/***/ "./src/list.js":
 /*!*********************!*\
-  !*** ./src/task.js ***!
+  !*** ./src/list.js ***!
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Task)\n/* harmony export */ });\nclass Task {\n    constructor( description, priority, status ){\n        this.description = description;\n        this.priority = priority;\n        this.status = status;\n    }\n\n    setDescription(value){\n        this.description = value;\n    }\n\n};\n\n\n//# sourceURL=webpack://todolist/./src/task.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ List)\n/* harmony export */ });\nclass List {\n    constructor( title, dueDate, notes, tasks = [] ){\n        this.title = title;\n        this.dueDate = dueDate;\n        this.notes = notes;\n        this.tasks = tasks;\n    }\n\n    \n};\n\n//# sourceURL=webpack://todolist/./src/list.js?");
 
 /***/ })
 
@@ -60,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/task.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/list.js"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ })()
 ;

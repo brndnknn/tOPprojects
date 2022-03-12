@@ -5,4 +5,8 @@ export default class Task {
         this.status = status;
     }
 
+    setDescription(value){
+        this.description = value;
+    }
+
 };
