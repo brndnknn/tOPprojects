@@ -16,7 +16,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ List)\n/* harmony export */ });\nclass List {\n    constructor( title, dueDate, notes, tasks = [] ){\n        this.title = title;\n        this.dueDate = dueDate;\n        this.notes = notes;\n        this.tasks = tasks;\n    }\n\n    \n};\n\n//# sourceURL=webpack://todolist/./src/list.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ List)\n/* harmony export */ });\nclass List {\n    constructor( title, notes, tasks = [] ){\n        this.title = title;\n        this.notes = notes;\n        this.tasks = tasks;\n    }\n\n    \n};\n\n//# sourceURL=webpack://todolist/./src/list.js?");
 
 /***/ })
 

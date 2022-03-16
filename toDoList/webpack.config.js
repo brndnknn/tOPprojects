@@ -7,6 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
          index: './src/index.js',
          task: './src/task.js',
          list: './src/list.js',
+         render: './src/renderUI.js',
      },
      plugins: [
          new HtmlWebpackPlugin({
