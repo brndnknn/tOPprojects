@@ -2,14 +2,20 @@ import _ from 'lodash';
 import './styles.css';
 import Task from './task.js';
 import List from './list.js';
+import App from './app.js';
 import renderUI from './renderUI.js';
 
-const task = new Task('hello', '');
-const list = new List('newList', '', [task]);
+
+var app = new App();
+
+app.createNewTask(['hello', 'monday','high', 'incomplete']);
+app.createNewList(['A new List', 'No notes, just a test', [...app.allTasks]]);
+
+console.log(app.allTasks);
+console.log(app.allLists);
 
 
 
-console.log(task);
 
 
 renderUI.getElems();

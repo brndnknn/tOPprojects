@@ -129,6 +129,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/app.js":
+/*!********************!*\
+  !*** ./src/app.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./task.js */ \"./src/task.js\");\n/* harmony import */ var _list_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list.js */ \"./src/list.js\");\n\n\n\n\nclass App{\n    constructor(){\n        this.allTasks = [];\n        this.todayTasks = [];\n        this.thisWeekTasks = [];\n        this.allLists = [];\n    }\n\n    createNewTask(data){\n        let newTask = new _task_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](...data);\n        this.allTasks.push(newTask);\n    }\n\n    createNewList(data){\n        let newList = new _list_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"](...data);\n        this.allLists.push(newList);\n    }\n\n\n}\n\n/* \n\napp module\n\n-----\n- all tasks array\n- today tasks array\n- this weeks tasks array\n- all lists array\n\n----\nfunctions\n----\n\n    > create new task\n\n    > create new list\n\n    > add task to list\n\n    > get today's tasks\n\n    > get this week's tasks\n\n    > get past due tasks\n\n    > get completed tasks\n\n    > display by priority\n\n    > display by due date\n\n    > delete tasks\n\n    > delete arrays\n\n    > load from local data\n\n    > update local data\n\n\n\n\n\n\n*/\n\n//# sourceURL=webpack://todolist/./src/app.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -136,7 +147,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./task.js */ \"./src/task.js\");\n/* harmony import */ var _list_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./list.js */ \"./src/list.js\");\n/* harmony import */ var _renderUI_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./renderUI.js */ \"./src/renderUI.js\");\n\n\n\n\n\n\nconst task = new _task_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('hello', '');\nconst list = new _list_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]('newList', '', [task]);\n\n\n\nconsole.log(task);\n\n\n_renderUI_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"].getElems();\n//newTask.addEventListener('click',() => console.log('add task button'))\n//content.addEventListener('click',() => console.log(list))\n\n/* \nset up UI\n    \n\n*/\n\n//# sourceURL=webpack://todolist/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./task.js */ \"./src/task.js\");\n/* harmony import */ var _list_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./list.js */ \"./src/list.js\");\n/* harmony import */ var _app_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.js */ \"./src/app.js\");\n/* harmony import */ var _renderUI_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./renderUI.js */ \"./src/renderUI.js\");\n\n\n\n\n\n\n\n\nvar app = new _app_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"]();\n\napp.createNewTask(['hello', 'monday','high', 'incomplete']);\napp.createNewList(['A new List', 'No notes, just a test', [...app.allTasks]]);\n\nconsole.log(app.allTasks);\nconsole.log(app.allLists);\n\n\n\n\n\n_renderUI_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"].getElems();\n//newTask.addEventListener('click',() => console.log('add task button'))\n//content.addEventListener('click',() => console.log(list))\n\n/* \nset up UI\n    \n\n*/\n\n//# sourceURL=webpack://todolist/./src/index.js?");
 
 /***/ }),
 
@@ -147,7 +158,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var loda
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ List)\n/* harmony export */ });\nclass List {\n    constructor( title, notes, tasks = [] ){\n        this.title = title;\n        this.notes = notes;\n        this.tasks = tasks;\n    }\n\n    \n};\n\n//# sourceURL=webpack://todolist/./src/list.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ List)\n/* harmony export */ });\nclass List {\n    constructor( title, notes, tasks = [] ){\n        this.title = title;\n        this.notes = notes;\n        this.tasks = tasks;\n    }\n\n    setTitle(value){\n        this.title = value;\n    }\n\n    getTitle(){\n        return this.title;\n    }\n\n    setNotes(value){\n        this.title = value;\n    }\n\n    getNotes(){\n        return this.notes;\n    }\n\n    addTask(task){\n        this.tasks.push(task);\n    }\n\n    removeTask(taskIndex){\n            this.tasks.splice(taskIndex, 1);\n    }\n    \n    getTasks(){\n        return this.tasks;\n    }\n\n    \n};\n\n//# sourceURL=webpack://todolist/./src/list.js?");
 
 /***/ }),
 
@@ -158,7 +169,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderUI)\n/* harmony export */ });\n/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./task.js */ \"./src/task.js\");\n/* harmony import */ var _list_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list.js */ \"./src/list.js\");\n\n\n\n\nclass renderUI{\n\n    static getElems(){\n        const newTask = document.getElementById('newTask');\n        const newList = document.getElementById('newList');\n        const content = document.getElementById('content');\n        const allTasks = document.getElementById('allTasks');\n        const dueToday = document.getElementById('dueToday');\n        const thisWeek = document.getElementById('thisWeek');\n        const listOfLists = document.getElementById('listOfLists');\n    }\n\n    \n};\n\n//# sourceURL=webpack://todolist/./src/renderUI.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderUI)\n/* harmony export */ });\n/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./task.js */ \"./src/task.js\");\n/* harmony import */ var _list_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list.js */ \"./src/list.js\");\n\n\n\n\nclass renderUI{\n\n    static getElems(){\n        const newTask = document.getElementById('newTask');\n        const newList = document.getElementById('newList');\n        const content = document.getElementById('content');\n        const allTasks = document.getElementById('allTasks');\n        const dueToday = document.getElementById('dueToday');\n        const thisWeek = document.getElementById('thisWeek');\n        const listOfLists = document.getElementById('listOfLists');\n    }\n\n\n};\n\n//# sourceURL=webpack://todolist/./src/renderUI.js?");
 
 /***/ }),
 
@@ -169,7 +180,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Task)\n/* harmony export */ });\nclass Task {\n    constructor( description, dueDate, priority, status ){\n        this.description = description;\n        this.duDate = dueDate;\n        this.priority = priority;\n        this.status = status;\n    }\n\n    setDescription(value){\n        this.description = value;\n    }\n\n};\n\n\n//# sourceURL=webpack://todolist/./src/task.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Task)\n/* harmony export */ });\nclass Task {\n    constructor( description, dueDate, priority, status ){\n        this.description = description;\n        this.dueDate = dueDate;\n        this.priority = priority;\n        this.status = status;\n    }\n\n    setDescription(value){\n        this.description = value;\n    }\n\n    getDescription(){\n        return this.description;\n    }\n\n    setDueDate(value){\n        this.dueDate = value;\n    }\n\n    getDueDate(){\n        return this.dueDate;\n    }\n\n    setPriority(value){\n        this.priority = value;\n    }\n\n    getPriority(){\n        return this.priority;\n    }\n\n    setStatus(value){\n        this.status = value;\n    }\n\n    getStatus(){\n        return this.status;\n    }\n\n};\n\n\n//# sourceURL=webpack://todolist/./src/task.js?");
 
 /***/ })
 

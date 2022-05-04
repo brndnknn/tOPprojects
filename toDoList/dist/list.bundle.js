@@ -16,7 +16,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ List)\n/* harmony export */ });\nclass List {\n    constructor( title, notes, tasks = [] ){\n        this.title = title;\n        this.notes = notes;\n        this.tasks = tasks;\n    }\n\n    \n};\n\n//# sourceURL=webpack://todolist/./src/list.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ List)\n/* harmony export */ });\nclass List {\n    constructor( title, notes, tasks = [] ){\n        this.title = title;\n        this.notes = notes;\n        this.tasks = tasks;\n    }\n\n    setTitle(value){\n        this.title = value;\n    }\n\n    getTitle(){\n        return this.title;\n    }\n\n    setNotes(value){\n        this.title = value;\n    }\n\n    getNotes(){\n        return this.notes;\n    }\n\n    addTask(task){\n        this.tasks.push(task);\n    }\n\n    removeTask(taskIndex){\n            this.tasks.splice(taskIndex, 1);\n    }\n    \n    getTasks(){\n        return this.tasks;\n    }\n\n    \n};\n\n//# sourceURL=webpack://todolist/./src/list.js?");
 
 /***/ })
 

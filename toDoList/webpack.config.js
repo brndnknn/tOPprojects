@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
      mode: "development",
      entry: {
          index: './src/index.js',
+         app: './src/app.js',
          task: './src/task.js',
          list: './src/list.js',
          render: './src/renderUI.js',

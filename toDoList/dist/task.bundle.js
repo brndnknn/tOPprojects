@@ -16,7 +16,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Task)\n/* harmony export */ });\nclass Task {\n    constructor( description, dueDate, priority, status ){\n        this.description = description;\n        this.duDate = dueDate;\n        this.priority = priority;\n        this.status = status;\n    }\n\n    setDescription(value){\n        this.description = value;\n    }\n\n};\n\n\n//# sourceURL=webpack://todolist/./src/task.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Task)\n/* harmony export */ });\nclass Task {\n    constructor( description, dueDate, priority, status ){\n        this.description = description;\n        this.dueDate = dueDate;\n        this.priority = priority;\n        this.status = status;\n    }\n\n    setDescription(value){\n        this.description = value;\n    }\n\n    getDescription(){\n        return this.description;\n    }\n\n    setDueDate(value){\n        this.dueDate = value;\n    }\n\n    getDueDate(){\n        return this.dueDate;\n    }\n\n    setPriority(value){\n        this.priority = value;\n    }\n\n    getPriority(){\n        return this.priority;\n    }\n\n    setStatus(value){\n        this.status = value;\n    }\n\n    getStatus(){\n        return this.status;\n    }\n\n};\n\n\n//# sourceURL=webpack://todolist/./src/task.js?");
 
 /***/ })
 
